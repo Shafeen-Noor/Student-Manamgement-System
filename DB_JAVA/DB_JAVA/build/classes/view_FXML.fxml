@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="720.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_FXMLController">
+   <children>
+      <AnchorPane prefHeight="580.0" prefWidth="217.0" style="-fx-background-color: #2F4F4F;">
+         <children>
+            <Button fx:id="std_btn" layoutX="38.0" layoutY="161.0" mnemonicParsing="false" onAction="#std_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="STUDENTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ins_btn" layoutX="38.0" layoutY="201.0" mnemonicParsing="false" onAction="#ins_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="INSTRUCTORS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="crs_btn" layoutX="38.0" layoutY="238.0" mnemonicParsing="false" onAction="#crs_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="COURSES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sub_btn" layoutX="38.0" layoutY="277.0" mnemonicParsing="false" onAction="#subj_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="SUBJECTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="view_btn" layoutX="38.0" layoutY="317.0" mnemonicParsing="false" onAction="#view_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="VIEW" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="225.0" layoutY="14.0" text="VIEW">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo" editable="true" layoutX="248.0" layoutY="61.0" onAction="#select" prefWidth="150.0" promptText="choose" visibleRowCount="4" />
+   </children>
+</AnchorPane>

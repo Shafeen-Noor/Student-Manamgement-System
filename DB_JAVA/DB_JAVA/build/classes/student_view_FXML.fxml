@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student_view_FXMLController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="720.0" style="-fx-background-color: #FFF;">
+         <children>
+            <AnchorPane prefHeight="580.0" prefWidth="217.0" style="-fx-background-color: #2F4F4F;">
+               <children>
+                  <Button fx:id="std_btn" layoutX="38.0" layoutY="161.0" mnemonicParsing="false" onAction="#std_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="STUDENTS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ins_btn" layoutX="38.0" layoutY="201.0" mnemonicParsing="false" onAction="#ins_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="INSTRUCTORS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="crs_btn" layoutX="38.0" layoutY="238.0" mnemonicParsing="false" onAction="#crs_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="COURSES" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sub_btn" layoutX="38.0" layoutY="277.0" mnemonicParsing="false" onAction="#subj_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="SUBJECTS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="view_btn" layoutX="38.0" layoutY="317.0" mnemonicParsing="false" onAction="#view_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="VIEW" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="225.0" layoutY="14.0" text="STUDENT VIEW">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="batch2" layoutX="278.0" layoutY="75.0" prefHeight="25.0" prefWidth="73.0" />
+            <Label layoutX="225.0" layoutY="79.0" text="BATCH" />
+            <TextField fx:id="crs_id" layoutX="455.0" layoutY="75.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="subj_id" layoutX="629.0" layoutY="75.0" prefHeight="25.0" prefWidth="73.0" />
+            <Label layoutX="378.0" layoutY="79.0" text="COURSE ID" />
+            <Label layoutX="557.0" layoutY="79.0" text="SUBJECT ID" />
+            <Button fx:id="view" layoutX="643.0" layoutY="535.0" mnemonicParsing="false" onAction="#view_table" text="VIEW" />
+            <Button fx:id="all" layoutX="557.0" layoutY="535.0" mnemonicParsing="false" onAction="#all_table" text="ALL" />
+            <ScrollPane layoutX="217.0" layoutY="205.0">
+               <content>
+                  <TableView fx:id="StudentTable" prefHeight="320.0" prefWidth="1913.0">
+                    <columns>
+                      <TableColumn fx:id="Course_ID" prefWidth="75.0" text="Course_ID" />
+                      <TableColumn fx:id="Student_ID" prefWidth="75.0" text="Student_ID" />
+                        <TableColumn fx:id="Student_Name" prefWidth="91.0" text="Student_Name" />
+                        <TableColumn fx:id="Student_CNIC" prefWidth="99.0" text="Student CNIC" />
+                        <TableColumn fx:id="Student_F_Name" prefWidth="103.0" text="Student_F_Name" />
+                        <TableColumn fx:id="Student_F_CNIC" prefWidth="92.0" text="Father CNIC" />
+                        <TableColumn fx:id="Student_F_Occupation" prefWidth="115.0" text="Father Occupation" />
+                        <TableColumn fx:id="Phone_Number" prefWidth="99.0" text="Phone_Number" />
+                        <TableColumn fx:id="Student_DOB" prefWidth="86.0" text="DOB" />
+                        <TableColumn fx:id="Student_Religion" prefWidth="74.0" text="Religion" />
+                        <TableColumn fx:id="Present_Address" prefWidth="98.0" text="Present Address" />
+                        <TableColumn fx:id="Permanent_Address" prefWidth="115.0" text="Permanent Address" />
+                        <TableColumn fx:id="Year_Of_Addmission" prefWidth="102.0" text="Addmission Year" />
+                        <TableColumn fx:id="batch" prefWidth="60.0" text="Batch" />
+                        <TableColumn fx:id="Student_Qualification" prefWidth="83.0" text="Qualification" />
+                        <TableColumn fx:id="tel_Number" prefWidth="98.0" text="Telephone " />
+                        <TableColumn fx:id="Guardian_Name" prefWidth="97.0" text="Guardian Name" />
+                        <TableColumn fx:id="Guardian_relation" prefWidth="109.0" text="Guardian Relation" />
+                        <TableColumn fx:id="Guardian_Address" prefWidth="109.0" text="Guardian Address" />
+                        <TableColumn fx:id="mobile" prefWidth="76.0" text="Mobile" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

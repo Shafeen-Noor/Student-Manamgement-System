@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Subject_FXMLController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-31.0" prefHeight="612.0" prefWidth="237.0" style="-fx-background-color: #2F4F4F;">
+         <children>
+            <Button fx:id="std_btn" layoutX="32.0" layoutY="157.0" mnemonicParsing="false" onAction="#std_btn_clicked" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="STUDENTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ins_btn" layoutX="32.0" layoutY="198.0" mnemonicParsing="false" onAction="#ins_btn_clicked" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="INSTRUCTORS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="crs_btn" layoutX="32.0" layoutY="237.0" mnemonicParsing="false" onAction="#crs_btn_clicked" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="COURSES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="subj_btn" layoutX="32.0" layoutY="278.0" mnemonicParsing="false" onAction="#subj_btn_clicked" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="SUBJECTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="view_btn" layoutX="32.0" layoutY="320.0" mnemonicParsing="false" onAction="#view_btn_clicked" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="VIEW" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="253.0" layoutY="22.0" text="SUBJECTS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="377.0" prefHeight="27.0" prefWidth="99.0" text="COURSE ID" />
+      <Label layoutX="274.0" layoutY="128.0" prefHeight="27.0" prefWidth="99.0" text="SUBJECT ID" />
+      <Label layoutX="274.0" layoutY="165.0" prefHeight="27.0" prefWidth="99.0" text="SUBJECT NAME" />
+      <Label layoutX="275.0" layoutY="204.0" prefHeight="27.0" prefWidth="127.0" text="SUBJECT DESCRIPTION" />
+      <TextField fx:id="crs_id2" layoutX="406.0" layoutY="378.0" onAction="#crs_id_clicked" prefHeight="25.0" prefWidth="178.0" promptText="course ID" />
+      <TextField fx:id="subj_id" layoutX="406.0" layoutY="129.0" onAction="#subj_id_clicked" prefHeight="25.0" prefWidth="178.0" promptText="subject ID" />
+      <TextField fx:id="subj_name" layoutX="406.0" layoutY="166.0" onAction="#subj_name_clicked" prefHeight="25.0" prefWidth="178.0" promptText="subject name" />
+      <TextField fx:id="subj_desc" layoutX="406.0" layoutY="205.0" onAction="#subj_desc_clicked" prefHeight="25.0" prefWidth="178.0" promptText="subject description" />
+      <Button layoutX="613.0" layoutY="265.0" mnemonicParsing="false" onAction="#sub_update_clicked" text="UPDATE" />
+      <Button layoutX="629.0" layoutY="61.0" mnemonicParsing="false" onAction="#sub_view_clicked" text="VIEW" />
+      <Button layoutX="543.0" layoutY="265.0" mnemonicParsing="false" onAction="#sub_add_clicked" text="ADD" />
+      <TextField fx:id="course_search" layoutX="406.0" layoutY="61.0" onAction="#crs_id_clicked" prefHeight="25.0" prefWidth="178.0" promptText="subject id" />
+      <Label layoutX="274.0" layoutY="419.0" prefHeight="27.0" prefWidth="99.0" text="SUBJECT ID" />
+      <TextField fx:id="subj_id2" layoutX="406.0" layoutY="419.0" onAction="#subj_id_clicked" prefHeight="25.0" prefWidth="178.0" promptText="subject ID" />
+      <Button fx:id="add2" layoutX="543.0" layoutY="484.0" mnemonicParsing="false" onAction="#sub_add2_clicked" text="ADD" />
+      <Button fx:id="delete" layoutX="613.0" layoutY="484.0" mnemonicParsing="false" onAction="#sub_remove_clicked" text="REMOVE" />
+      <Label layoutX="260.0" layoutY="316.0" text="DETAILS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

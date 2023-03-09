@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="720.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="instructor_view_FXMLController">
+   <children>
+      <AnchorPane prefHeight="580.0" prefWidth="217.0" style="-fx-background-color: #2F4F4F;">
+         <children>
+            <Button fx:id="std_btn" layoutX="38.0" layoutY="161.0" mnemonicParsing="false" onAction="#std_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="STUDENTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ins_btn" layoutX="38.0" layoutY="201.0" mnemonicParsing="false" onAction="#ins_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="INSTRUCTORS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="crs_btn" layoutX="38.0" layoutY="238.0" mnemonicParsing="false" onAction="#crs_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="COURSES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sub_btn" layoutX="38.0" layoutY="277.0" mnemonicParsing="false" onAction="#subj_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="SUBJECTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="view_btn" layoutX="38.0" layoutY="317.0" mnemonicParsing="false" onAction="#view_btn_clicked" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #2F4F4F;" text="VIEW" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="225.0" layoutY="14.0" text="INSTRUCTOR VIEW">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="exp" layoutX="298.0" layoutY="64.0" prefHeight="25.0" prefWidth="73.0" />
+      <Label layoutX="225.0" layoutY="68.0" text="EXPERIENCE" />
+      <TextField fx:id="crs_id" layoutX="454.0" layoutY="64.0" prefHeight="25.0" prefWidth="73.0" />
+      <TextField fx:id="subj_id" layoutX="622.0" layoutY="64.0" prefHeight="25.0" prefWidth="73.0" />
+      <Label layoutX="388.0" layoutY="68.0" text="COURSE ID" />
+      <Label layoutX="545.0" layoutY="68.0" text="SUBJECT ID" />
+      <Button fx:id="view" layoutX="643.0" layoutY="535.0" mnemonicParsing="false" onAction="#view_table" text="VIEW" />
+      <Button fx:id="all" layoutX="557.0" layoutY="535.0" mnemonicParsing="false" onAction="#all_table" text="ALL" />
+      <ScrollPane layoutX="217.0" layoutY="158.0">
+         <content>
+            <TableView fx:id="InstructorTable" prefHeight="365.0" prefWidth="1121.0">
+              <columns>
+                <TableColumn fx:id="Subject_ID" prefWidth="75.0" text="Subject ID" />
+                <TableColumn fx:id="Instructor_ID" prefWidth="83.0" text="Instructor ID" />
+                  <TableColumn fx:id="Instructor_Name" prefWidth="75.0" text="Name" />
+                  <TableColumn fx:id="Instructor_F_Name" prefWidth="90.0" text="Fathers Name" />
+                  <TableColumn fx:id="Instructor_CNIC" prefWidth="88.0" text="CNIC" />
+                  <TableColumn fx:id="Instructor_DOB" prefWidth="75.0" text="D.O.B" />
+                  <TableColumn fx:id="Instructor_Phone" prefWidth="75.0" text="Phone No." />
+                  <TableColumn fx:id="Instructor_Address" prefWidth="93.0" text="Address" />
+                  <TableColumn fx:id="Date_Of_Join" prefWidth="75.0" text="Date of Join" />
+                  <TableColumn fx:id="Instructor_Qualification" prefWidth="92.0" text="Qualification" />
+                  <TableColumn fx:id="Instructor_Gender" prefWidth="75.0" text="Gender" />
+                  <TableColumn fx:id="Instructor_designation" prefWidth="75.0" text="Designation" />
+                  <TableColumn fx:id="Instructor_Scale" prefWidth="75.0" text="Scale" />
+                  <TableColumn fx:id="Instructor_Salary" prefWidth="75.0" text="Salary" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
